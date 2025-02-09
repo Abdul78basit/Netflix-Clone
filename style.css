@@ -1,0 +1,389 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+  height: 100%;
+  font-family: "Work Sans", serif;
+}
+
+.main {
+  background-image: url(assets/images/bg.jpg);
+  height: 80vh;
+  position: relative;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: max(1200px, 100vw);
+}
+
+.main .box {
+  height: 80vh;
+  width: 100%;
+  opacity: 0.7;
+  background-color: black;
+  position: absolute;
+  top: 0;
+}
+
+nav {
+  max-width: 70vw;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+}
+
+nav img {
+  width: 145px;
+  position: relative;
+  z-index: 10;
+}
+
+nav button {
+  position: relative;
+  z-index: 10;
+}
+
+.hero {
+  font-family: "Work Sans", serif;
+  height: calc(100% - 100px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  position: relative;
+  gap: 23px;
+  padding: 0 30px;
+}
+
+.hero > :nth-child(1) {
+  font-weight: 900;
+  font-size: 56px;
+  text-align: center;
+}
+
+.hero > :nth-child(2) {
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+}
+
+.hero > :nth-child(3) {
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+}
+
+.seperation {
+  height: 150px;
+  background: linear-gradient(to right, red, navy);
+  position: relative;
+  clip-path: ellipse(50% 2% at 50% 3%);
+}
+
+.btn {
+  padding: 7px 15px;
+  font-weight: bold;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.red-sm {
+  background-color: red;
+  font-size: 14px;
+}
+.red-btn {
+  background-color: rgb(229, 9, 20);
+  font-size: 25px;
+  padding: 8px 24px;
+}
+
+.main input {
+  border-radius: 4px;
+  font-size: 20px;
+  padding: 8px 24px;
+  background: rgba(23, 23, 23, 0.2);
+  color: white;
+  border: 1px slid rgba(246, 248, 248, 0.5);
+}
+
+.first {
+  padding: 20px;
+  background: #000;
+  color: #fff;
+}
+
+.first h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.slider-wrapper {
+  overflow: hidden;
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider img {
+  margin: 15px;
+  width: 20%;
+  max-width: 900px;
+  max-height: 500px;
+  object-fit: cover;
+  flex-shrink: 0;
+  border-radius: 10px;
+}
+
+/* feature section */
+
+.feature-sec {
+  width: 80%;
+  padding: 20px;
+  margin: auto;
+}
+
+.feature-sec h2 {
+  margin: 15px;
+  text-align: center;
+}
+
+.feature-grid {
+  display: flex;
+  gap: 7px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.feature-card {
+  width: 250px;
+  height: 300px;
+  background: #190028;
+  padding: 20px;
+  display: flex;
+  text-align: left;
+  border-radius: 20px;
+  position: relative;
+  flex: 0 0 auto;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.feature-description {
+  margin: 20px 12px;
+  color: #878787;
+}
+
+.feature-icon {
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+
+.faq {
+  padding: 34px;
+}
+
+.faq-box {
+  justify-content: space-between;
+  display: flex;
+  background-color: rgb(45, 45, 45);
+  padding: 20px;
+  max-width: 40vw;
+  margin: 12px auto;
+  cursor: pointer;
+  font-size: 24px;
+  transition: 0.5s;
+}
+
+.faq h2 {
+  text-align: center;
+  font-size: 24px;
+}
+.faq-box:hover {
+  background-color: #414141;
+}
+
+footer {
+  color: white;
+  max-width: 60vw;
+  margin: auto;
+  padding: 14px;
+}
+
+footer .questions {
+  font-size: 16px;
+  padding: 34px 0;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 15px;
+  color: white;
+}
+
+.footer a {
+  font-size: 14px;
+  color: white;
+}
+
+.footer .footer-item {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+footer .trans-btn {
+  margin: 45px 0;
+  background: transparent;
+  border: 2px solid #878787;
+}
+
+footer .pak {
+  color: #878787;
+  font-weight: 700;
+}
+
+/* Responsive  */
+
+@media (max-width: 600px) {
+  .feature-card {
+    height: auto;
+    padding-bottom: 60px;
+  }
+
+  .feature-icon {
+    width: 40px;
+    height: 40px;
+    position: static;
+    margin-top: 10px;
+    align-self: flex-end;
+  }
+}
+
+/* Feature Section Responsive */
+@media (max-width: 1330px) and (min-width: 1290px) {
+  .feature-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .feature-card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1300px) {
+  nav {
+    max-width: 90%;
+  }
+
+  nav img {
+    width: 100px;
+  }
+
+  nav button {
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+
+  .hero {
+    padding: 20px;
+  }
+
+  .hero > :nth-child(1) {
+    font-size: 32px;
+  }
+
+  .hero > :nth-child(2) {
+    font-size: 16px;
+  }
+
+  .hero > :nth-child(3) {
+    font-size: 14px;
+  }
+
+  .hero input {
+    width: 100%;
+    margin: auto;
+    display: flex;
+  }
+
+  .red-btn {
+    display: flex;
+    font-size: 18px;
+    padding: 10px 25px;
+    margin: 15px auto;
+  }
+  .faq-box {
+    max-width: 80vw;
+    font-size: 16px;
+  }
+  .title {
+    font-size: 16px;
+  }
+
+  /* .feature-card {
+  } */
+  .feature-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 7px;
+  }
+  .feature-card {
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+    padding: 16px;
+    box-sizing: border-box;
+  }
+  .feature-icon {
+    width: 40px;
+    height: 40px;
+    position: static;
+    margin-top: 10px;
+    align-self: flex-end;
+  }
+  .feature-sec h2 {
+    font-size: 24px;
+  }
+
+  footer {
+    max-width: 90vw;
+  }
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* margin: auto; */
+  }
+
+  .footer-item {
+    margin: 12px;
+    align-items: center;
+  }
+}
